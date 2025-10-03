@@ -11,6 +11,11 @@ const App = () => {
           >
             <Text style={styles.title}>CSE Department Library</Text>
 
+            <Link href="/books" style={{ marginHorizontal: 'auto'}} asChild>
+              <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>Books Available</Text>
+              </Pressable>
+            </Link>
             <Link href="/contact" style={{ marginHorizontal: 'auto'}} asChild>
               <Pressable style={styles.button}>
                 <Text style={styles.buttonText}>Login</Text>
@@ -54,10 +59,12 @@ const styles = StyleSheet.create({
   },
   button: {
     height: 60,
+    width: 150,
     borderRadius: 20,
     justifyContent: 'center',
     backgroundColor: 'rgba(0,0,0,0.5)',
     padding: 6,
+    marginBottom: 50,
   },
   buttonText: {
     color: 'white',
