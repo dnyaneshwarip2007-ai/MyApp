@@ -16,7 +16,7 @@ const App = () => {
                 <Text style={styles.buttonText}>Books Available</Text>
               </Pressable>
             </Link>
-            <Link href="/contact" style={{ marginHorizontal: 'auto'}} asChild>
+            <Link href="/login" style={{ marginHorizontal: 'auto'}} asChild>
               <Pressable style={styles.button}>
                 <Text style={styles.buttonText}>Login</Text>
               </Pressable>
